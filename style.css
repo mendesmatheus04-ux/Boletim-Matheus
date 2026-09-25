@@ -1,9 +1,12 @@
+/* Importação de fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 /* Configurações gerais e tema Dark Mode */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -18,22 +21,29 @@ body {
   margin: 0 auto;
 }
 
-/* Cabeçalho */
+/* Cabeçalho com Título Estilizado em Degradê */
 .header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .header h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  /* Cria o efeito de gradiente do branco para um cinza prateado */
+  background: linear-gradient(135deg, #ffffff 0%, #a8a8b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Brilho suave ao fundo do texto */
+  filter: drop-shadow(0px 2px 8px rgba(255, 255, 255, 0.15));
 }
 
 .subtitle {
   color: #a8a8b3;
-  margin-top: 5px;
-  font-size: 1rem;
+  margin-top: 8px;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
 }
 
 /* Grid de Cards de Resumo */
@@ -47,7 +57,7 @@ body {
 .card {
   background-color: #202024; /* Card com fundo levemente mais claro */
   border: 1px solid #323238;   /* Borda fina discreta */
-  border-radius: 12px;       /* Bordas arredondadas conforme escolhido */
+  border-radius: 12px;       /* Bordas arredondadas */
   padding: 20px;
   text-align: center;
 }
