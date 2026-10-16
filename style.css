@@ -86,45 +86,4 @@ body {
 /* Tabela Responsiva */
 .table-container {
   background-color: #202024;
-  border: 1px solid #323238;
-  border-radius: 12px;
-  overflow-x: auto; /* Permite rolar para os lados no celular se preciso */
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  min-width: 650px;
-}
-
-th, td {
-  padding: 14px 16px;
-  border-bottom: 1px solid #323238;
-  font-size: 0.95rem;
-}
-
-th {
-  background-color: #29292e;
-  color: #e1e1e6;
-  font-weight: 600;
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-/* Estilos de destaques para Situações */
-.situacao-bom {
-  color: #00b37e;
-  font-weight: 600;
-}
-
-.situacao-atencao {
-  color: #f75a68;
-  font-weight: 600;
-}
-
-.situacao-indisponivel {
-  color: #8d8d99;
-}
+  border: 1px solid #32323
