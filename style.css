@@ -252,3 +252,83 @@ tr:last-child td {
   font-size: 0.9rem;
   color: #a8a8b3;
 }
+
+/* Área de Gráficos e Estilos Específicos */
+.area-graficos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.grafico-card {
+  background-color: #202024;
+  border: 1px solid #323238;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grafico-card.card-perigo {
+  border-color: #f75a68;
+  box-shadow: 0 0 12px rgba(247, 90, 104, 0.25);
+}
+
+.grafico-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.grafico-card h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.grafico-card-header h2 {
+  margin-bottom: 0;
+}
+
+.badge-perigo {
+  background-color: #f75a68;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.grafico-container {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  flex: 1;
+}
+
+.grafico-container-alt {
+  height: 480px;
+}
+
+/* Media Queries para Responsividade dos Gráficos */
+@media (max-width: 1024px) {
+  .area-graficos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .area-graficos {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico-container-alt {
+    height: 520px;
+  }
+}
